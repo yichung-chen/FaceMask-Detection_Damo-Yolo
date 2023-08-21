@@ -4,4 +4,4 @@ This repo includes a demo for building a face mask detector using Damo-Yolo mode
 
 ![image](https://github.com/yichung-chen/FaceMask-Detection_Damo-Yolo/blob/main/results/maksssksksss12.png)
 
-### Datasets
+## Datasets
