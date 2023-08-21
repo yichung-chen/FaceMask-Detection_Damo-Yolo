@@ -9,3 +9,9 @@ This repo includes a demo for building a face mask detector using Damo-Yolo mode
 The model was trained on [Face-Mask](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection) dataset which contains 853 images belonging to the 3 classes, as well as their bounding boxes in the PASCAL VOC format.
 
 The classes are defined as follows:
+
+* With mask
+* Without mask
+* Mask worn incorrectly
+
+
