@@ -15,7 +15,6 @@ The classes are defined as follows:
 * Mask worn incorrectly
 
 ```
-
 git clone https://github.com/yichung-chen/FaceMask-Detection_Damo-Yolo.git
 cd customized
 pip install -r requirements.txt
