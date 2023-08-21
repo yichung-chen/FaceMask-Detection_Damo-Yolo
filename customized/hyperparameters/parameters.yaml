@@ -1,0 +1,55 @@
+hyperparameters: # Necessary Key
+  inference:
+    advanced_para:
+      DETECTION_MAX_INSTANCES:
+        value: 50
+    default_para:
+      DETECTION_MIN_CONFIDENCE:
+        value: 0.9
+      batch_size:
+        value: 1
+  training: # Necessary Key
+    advanced_para: # Necessary Key
+      learning_rate:
+        value: 0.01
+      min_lr_ratio:
+        value: 0.05
+      weight_decay:
+        value: 0.0005
+      no_aug_epochs:
+        value: 16
+      warmup_epochs:
+        value: 5
+      image_size: # Necessary Key
+        Height: # Necessary Key
+          value: 640
+        Width: # Necessary Key
+          value: 640
+      mixup_prob:
+        value: 0.15
+      degrees:
+        value: 10.0
+      translate: 
+        value: 0.2
+      shear:
+        value: 0.2
+    default_para: # Necessary Key
+      batch:
+        value: 32
+      epochs:
+        value: 300
+      model:
+        value:
+        - select_key: damoyolo_tinynasL20_T
+        - damoyolo_tinynasL18_Nm
+        - damoyolo_tinynasL18_Ns
+        - damoyolo_tinynasL20_N
+        - damoyolo_tinynasL20_Nl
+        - damoyolo_tinynasL20_T
+        - damoyolo_tinynasL25_S
+        - damoyolo_tinynasL35_M
+        - damoyolo_tinynasL45_L
+model_type: object_detection # Necessary Key
+name: xxxx-model-hyperparameters
+version: 2023-02-10
+
