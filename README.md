@@ -14,8 +14,29 @@ The classes are defined as follows:
 * Without mask
 * Mask worn incorrectly
 
+## DatasetsSetup
+* Clone this repo and we have included Damo-YOLO repo
 ```
 git clone https://github.com/yichung-chen/FaceMask-Detection_Damo-Yolo.git
 cd customized
 pip install -r requirements.txt
+```
+## Prepare Datasets
+Download [Face-Mask](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection) dataset from Kaggle and copy it into /customized/dataset/dataset/ folder.
+Execute the following command to split it into train、valid and test sets and convert the data into the COCO format. The split ratio was set to 80/10%/10%.
+```
+copy dataset to /customized/dataset/dataset/
+cd customized/model/
+
+# Spilt dataset
+python datasets_split.py \
+        --datadir='/customized/dataset/dataset/' \
+        --split=0.2 \
+        --train_output='/customized/dataset/train/' \
+        --val_output='/customized/dataset/val/
+        --test_output='/customized/dataset/test/' \
+        --image_ext= 'your image type(jpg or png)'
+
+# Convert to COCO format
+python voc2coco.py
 ```
