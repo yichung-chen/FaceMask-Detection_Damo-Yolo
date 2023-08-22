@@ -13,6 +13,7 @@ onnx
 onnxruntime
 onnxsim
 nvidia-tensorrt
-pycuda
+tabulate
 cuda-python
 pandas
+numpy==1.23.3
