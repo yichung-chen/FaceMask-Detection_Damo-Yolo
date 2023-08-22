@@ -41,7 +41,6 @@ python datasets_split.py \
 python voc2coco.py
 
 # Choise which model you want, Default is damoyolo_tinynasL20_T
-
 vim customized/hyperparameters/hyperparameters.yaml
 
 ```
