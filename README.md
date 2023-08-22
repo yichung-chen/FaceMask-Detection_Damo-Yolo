@@ -39,4 +39,20 @@ python datasets_split.py \
 
 # Convert to COCO format
 python voc2coco.py
+
+# Choise which model you want, Default is damoyolo_tinynasL20_T
+
+vim customized/hyperparameters/hyperparameters.yaml
+
 ```
+
+## Training
+```
+cd customized/models/
+python training.py
+
+or use the original author code
+
+cd customized/damo-yolo
+python -m torch.distributed.launch --nproc_per_node=8 train.py -f configs/damoyolo_tinynasL20_T.py
+
